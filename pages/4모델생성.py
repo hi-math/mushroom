@@ -67,7 +67,7 @@ if 'dataset' in st.session_state:
             st.write(f"식용버섯을 골라 먹은 경우는 {cm[0,0]}")
             st.write(f"독버섯인데 먹을 경우는 {cm[1,0]}")
             st.write(f"식용버섯인데 안먹을 경우는 {cm[0,1]}")
-            score = round((cm[1,1] + cm[0,0] - 5* cm[1,0])/4785,3)
+            score = round((cm[1,1] + cm[0,0] - 5* cm[1,0])/7785,3)
             st.write(f"총점은 {score*100}점 입니다.")
             
             
