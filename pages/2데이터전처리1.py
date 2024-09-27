@@ -21,7 +21,6 @@ def reload():
     my_bar.empty()
     st.rerun()
 
-st.session_state['dataset_ele']=data.copy()
 
 
 if 'dataset' in st.session_state:
@@ -30,6 +29,8 @@ if 'dataset' in st.session_state:
     
     data = st.session_state['dataset'].copy()
     data_test = st.session_state['data_test'].copy()
+    st.session_state['dataset_ele']=data.copy()
+
     del_column = st.selectbox("삭제할 속성을 선택하세요", list(data.columns.tolist()), index=None)    
     
     if st.button("삭제하기") and del_column:
