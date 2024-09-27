@@ -21,6 +21,8 @@ def reload():
     my_bar.empty()
     st.rerun()
 
+st.session_state['dataset_ele']=data.copy()
+
 
 if 'dataset' in st.session_state:
     
