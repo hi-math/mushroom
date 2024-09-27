@@ -8,7 +8,8 @@ st.title("데이터 전처리 2 : 문자 데이터 변환하기")
 
 st.write("수치데이터가 아닌 것은 처리할 수 없습니다. 그림과 같은 방법으로 처리합니다.")
 
-st.image(".\\img\\Get_Dummies.png")
+st.image("img/Get_Dummies.png")
+
    
 data = st.session_state['dataset'].copy()
 data_test = st.session_state['data_test'].copy()
