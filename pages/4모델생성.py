@@ -9,7 +9,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix
-import seaborn  as sns
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 
